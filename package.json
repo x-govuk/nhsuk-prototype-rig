@@ -1,15 +1,15 @@
 {
-  "name": "govuk-prototype-rig",
-  "version": "0.9.1",
-  "description": "Rapidly create prototypes of GOV.UK services",
+  "name": "nhsuk-prototype-rig",
+  "version": "0.0.1",
+  "description": "Rapidly create prototypes of NHS.UK services",
   "keywords": [
     "govuk",
     "design system",
     "prototyping"
   ],
-  "homepage": "https://x-govuk.github.io/govuk-prototype-rig/",
+  "homepage": "https://x-govuk.github.io/nhsuk-prototype-rig/",
   "bugs": {
-    "url": "https://github.com/x-govuk/govuk-prototype-rig/issues"
+    "url": "https://github.com/x-govuk/nhsuk-prototype-rig/issues"
   },
   "license": "MIT",
   "files": [
@@ -21,7 +21,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/x-govuk/govuk-prototype-rig.git"
+    "url": "https://github.com/x-govuk/nhsuk-prototype-rig.git"
   },
   "scripts": {
     "build-docs": "eleventy --config .eleventy.cjs",
@@ -57,6 +57,7 @@
     "luxon": "^3.0.1",
     "marked": "^4.0.12",
     "mock-req-res": "^1.2.0",
+    "nhsuk-frontend": "^6.1.2",
     "nodemon": "^2.0.13",
     "npm-run-all": "^4.1.5",
     "nunjucks": "^3.2.1",

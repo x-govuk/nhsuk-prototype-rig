@@ -1,6 +1,6 @@
-# GOV.UK Prototype Rig
+# NHS.UK Prototype Rig
 
-Go to the [GOV.UK Prototype Rig](https://x-govuk.github.io/govuk-prototype-rig/) website to download the latest version and read the documentation.
+A WIP NHS.UK of the [GOV.UK Prototype Rig](https://x-govuk.github.io/govuk-prototype-rig/).
 
 ## Requirements
 
@@ -9,7 +9,7 @@ Go to the [GOV.UK Prototype Rig](https://x-govuk.github.io/govuk-prototype-rig/)
 ## Installation
 
 1. Clone this repository:\
-`git clone git@github.com:x-govuk/govuk-prototype-rig.git`
+`git clone git@github.com:x-govuk/nhsuk-prototype-rig.git`
 
 2. Install the dependencies:\
 `npm install`
@@ -29,4 +29,4 @@ To lint JavaScript and CSS files, use `npm run lint`.
 
 ## Contributing
 
-If you’ve got an idea or suggestion, please [create a GitHub issue](https://github.com/x-govuk/govuk-prototype-rig/issues).
+If you’ve got an idea or suggestion, please [create a GitHub issue](https://github.com/x-govuk/nhsuk-prototype-rig/issues).
