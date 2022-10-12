@@ -96,7 +96,7 @@ For example:
     text: "Email",
     conditional: {
       html: govukInput({
-        classes: "nhsuk-!-width-one-third",
+        classes: "nhsuk-u-width-one-third",
         label: {
           text: "Email address"
         },
@@ -119,7 +119,7 @@ For example:
     text: "Phone",
     conditional: {
       html: govukInput({
-        classes: "nhsuk-!-width-one-third",
+        classes: "nhsuk-u-width-one-third",
         label: {
           text: "Phone number"
         },
