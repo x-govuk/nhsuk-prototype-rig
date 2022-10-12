@@ -3,9 +3,12 @@
 {% set title = "Have you always lived in England?" %}
 
 {% block pageNavigation %}
-  {{ backLink({
-    href: paths.back
-  }) }}
+  <div class="nhsuk-width-container">
+    {{ backLink({
+      href: paths.back,
+      classes: "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+    }) }}
+  </div>
 {% endblock %}
 
 {% block content %}
