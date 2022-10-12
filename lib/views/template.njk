@@ -9,9 +9,9 @@
 {%- from "error-summary/macro.njk" import errorSummary %}
 {%- from "fieldset/macro.njk" import fieldset %}
 {%- from "footer/macro.njk" import footer %}
-{%- from "hint/macro.njk" import hint %}
 {%- from "header/macro.njk" import header %}
 {%- from "hero/macro.njk" import hero %}
+{%- from "hint/macro.njk" import hint %}
 {%- from "images/macro.njk" import image %}
 {%- from "inset-text/macro.njk" import insetText %}
 {%- from "label/macro.njk" import label %}
@@ -73,10 +73,6 @@
 
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
-
-    {% block headCSS %}
-      <link href="/css/main.css" rel="stylesheet">
-    {% endblock %}
 
     {% block customStyles %}
     {% endblock %}
