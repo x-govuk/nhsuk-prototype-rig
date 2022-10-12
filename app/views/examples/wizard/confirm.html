@@ -5,18 +5,15 @@
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-      {{ govukPanel({
-        titleText: title,
-        html: "Your reference number<br><strong>HDJ2123F</strong>"
+      {{ card({
+        heading: title,
+        headingLevel: 1,
+        headingClasses: "nhsuk-u-margin-bottom-4",
+        descriptionHtml: '<p class="nhsuk-u-font-size-24">Your reference number<br><strong class="nhsuk-u-font-size-32">HDJ2123F</strong></p>'
       }) }}
 
       <h2 class="nhsuk-heading-m">What happens next</h2>
       <p>This is the end of the example wizard journey.</p>
-
-      {{ button({
-        text: "Finish",
-        href: paths.next
-      }) }}
     </div>
   </div>
 {% endblock %}
