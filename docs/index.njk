@@ -13,14 +13,14 @@ eleventyComputed:
 ---
 <div class="nhsuk-grid-row">
 {% for item in collections["homepage"] %}
-  <section class="nhsuk-grid-column-one-third nhsuk-!-margin-bottom-8">
+  <section class="nhsuk-grid-column-one-third nhsuk-u-margin-bottom-8">
     <h2 class="nhsuk-heading-m nhsuk-!-font-size-27">{{ item.data.title }}</h2>
     <p class="nhsuk-body">{{ item.data.description | markdown("inline") }}</p>
     <p class="nhsuk-body"><a class="nhsuk-link nhsuk-!-font-weight-bold" href="{{ item.url | url }}">{{ item.data.action }}</a></p>
   </section>
 {% endfor %}
   <section class="nhsuk-grid-column-full">
-    <hr class="nhsuk-section-break nhsuk-section-break--visible nhsuk-section-break--xl nhsuk-!-margin-top-0">
+    <hr class="nhsuk-section-break nhsuk-section-break--visible nhsuk-section-break--xl nhsuk-u-margin-top-0">
     <h2 class="nhsuk-heading-m nhsuk-!-font-size-27">Contribute</h2>
     <p class="nhsuk-body">The project repository is public and we welcome contributions from anyone.</p>
     <p class="nhsuk-body"><a class="nhsuk-link nhsuk-!-font-weight-bold" href="{{ pkg.repository.url | replace(".git", "") }}">View this project on GitHub</a></p>

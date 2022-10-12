@@ -2,7 +2,7 @@
 
 {% set title = "Sorry, there is a problem with the prototype" %}
 {% set stackHtml %}
-<pre class="x-govuk-code x-govuk-code--block nhsuk-!-margin-0" tabindex="0"><code class="nhsuk-!-font-size-14">{{ error.stack }}</code></pre>
+<pre class="x-govuk-code x-govuk-code--block nhsuk-u-margin-0" tabindex="0"><code class="nhsuk-!-font-size-14">{{ error.stack }}</code></pre>
 {% endset %}
 
 {% block content %}
@@ -10,14 +10,14 @@
     <div class="nhsuk-grid-column-two-thirds">
       <h1 class="nhsuk-heading-xl">{{ title }}</h1>
 
-      <h2 class="nhsuk-heading-m nhsuk-!-margin-bottom-2">{{ error.name }}</h2>
+      <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">{{ error.name }}</h2>
       <p class="nhsuk-body">{{ error.message | nl2br | nl2br | safe }}</p>
       {{ details({
         summaryHtml: "Stack trace",
         html: stackHtml
       }) }}
 
-      <pre class="nhsuk-!-margin-top-8">Status code: {{ status }}</pre>
+      <pre class="nhsuk-u-margin-top-8">Status code: {{ status }}</pre>
     </div>
   </div>
 {% endblock %}
