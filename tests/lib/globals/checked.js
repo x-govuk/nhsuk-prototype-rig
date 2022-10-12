@@ -7,7 +7,7 @@ import {
 test.before(t => {
   const views = [
     './',
-    './node_modules/govuk-frontend',
+    './node_modules/nhsuk-frontend/packages/components',
     './tests/fixtures'
   ]
   const env = nunjucks.configure(views)
