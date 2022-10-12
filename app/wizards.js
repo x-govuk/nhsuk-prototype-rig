@@ -1,4 +1,4 @@
-import { wizard } from 'govuk-prototype-rig'
+import { wizard } from 'nhsuk-prototype-rig'
 
 export function exampleWizard (req) {
   const journey = {

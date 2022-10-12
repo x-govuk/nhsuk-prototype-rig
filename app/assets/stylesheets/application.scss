@@ -1,7 +1,9 @@
 // GOV.UK Frontend options
-$govuk-global-styles: true;
+$govuk-global-styles: false;
 $govuk-new-link-styles: true;
 $govuk-assets-path: "/govuk/assets/";
+
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
 
 // Import GOV.UK Frontend
 @import "govuk-frontend/govuk/all";

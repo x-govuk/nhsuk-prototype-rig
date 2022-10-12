@@ -1,9 +1,9 @@
 module.exports = function (eleventyConfig) {
   const url = process.env.GITHUB_ACTIONS
-    ? 'https://x-govuk.github.io/govuk-prototype-rig/'
+    ? 'https://x-govuk.github.io/nhsuk-prototype-rig/'
     : '/'
   const pathPrefix = process.env.GITHUB_ACTIONS
-    ? '/govuk-prototype-rig'
+    ? '/nhsuk-prototype-rig'
     : '/'
 
   // Plugins

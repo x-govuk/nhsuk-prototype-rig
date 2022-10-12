@@ -2,7 +2,7 @@
 import nodemon from 'nodemon'
 
 nodemon({
-  script: './node_modules/govuk-prototype-rig/lib/server.js',
+  script: './node_modules/nhsuk-prototype-rig/lib/server.js',
   watch: [
     '.env',
     '**/*.js',
