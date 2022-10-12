@@ -1,4 +1,4 @@
-{% extends defaultRigLayout or "template.njk" %}
+{% extends defaultRigLayout or "layouts/default.html" %}
 
 {% set title = "Clear session data?" %}
 
@@ -10,7 +10,7 @@
 
         {{ warningCallout({
           heading: "Clearing the session",
-          html: "<p>This will clear all of the data entered in this session</p>"
+          HTML: "<p>This will clear all of the data entered in this session</p>"
         }) }}
 
         {{ button({
