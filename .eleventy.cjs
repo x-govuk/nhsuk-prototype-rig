@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
     },
     footer: {
       contentLicence: {
-        html: 'Licensed under the <a class="govuk-footer__link" href="https://github.com/x-govuk/govuk-eleventy-plugin/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
+        html: 'Licensed under the <a class="nhsuk-footer__link" href="https://github.com/x-govuk/govuk-eleventy-plugin/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
       },
       copyright: {
         text: '© X-GOVUK'

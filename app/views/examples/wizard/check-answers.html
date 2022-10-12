@@ -3,16 +3,16 @@
 {% set title = "Check your answers before confirming" %}
 
 {% block pageNavigation %}
-  {{ govukBackLink({
+  {{ backLink({
     href: paths.back
   }) }}
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds-from-desktop">
-      <h1 class="govuk-heading-l">{{ title }}</h1>
-      {{ govukSummaryList({
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1 class="nhsuk-heading-l">{{ title }}</h1>
+      {{ summaryList({
         rows: [{
           key: {
             text: "Name"
@@ -72,7 +72,7 @@
         }]
       }) }}
 
-      {{ govukButton({
+      {{ button({
         text: "Confirm",
         href: paths.next
       }) }}

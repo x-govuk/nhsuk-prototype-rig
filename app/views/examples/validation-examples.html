@@ -3,13 +3,13 @@
 {% set title = "All field types" %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
       <form method="post" novalidate data-validate>
-        <h1 class="govuk-heading-l">{{ title }}</h1>
+        <h1 class="nhsuk-heading-l">{{ title }}</h1>
 
-        <h2 class="govuk-heading-m">Text input</h2>
-        {{ govukInput({
+        <h2 class="nhsuk-heading-m">Text input</h2>
+        {{ input({
           label: {
             text: "Full name"
           },
@@ -23,8 +23,8 @@
           }
         }) }}
 
-        <h2 class="govuk-heading-m">Radio buttons</h2>
-        {{ govukRadios({
+        <h2 class="nhsuk-heading-m">Radio buttons</h2>
+        {{ radios({
           classes: "govuk-radios--inline",
           fieldset: {
             legend: {
@@ -49,8 +49,8 @@
           }
         }) }}
 
-        <h2 class="govuk-heading-m">Checkboxes</h2>
-        {{ govukCheckboxes({
+        <h2 class="nhsuk-heading-m">Checkboxes</h2>
+        {{ checkboxes({
           fieldset: {
             legend: {
               text: "Which types of waste do you transport?"
@@ -77,8 +77,8 @@
           }
         }) }}
 
-        <h2 class="govuk-heading-m">Textarea</h2>
-        {{ govukTextarea({
+        <h2 class="nhsuk-heading-m">Textarea</h2>
+        {{ textarea({
           label: {
             text: "Can you provide more detail?"
           },
@@ -93,8 +93,8 @@
           }
         }) }}
 
-        <h2 class="govuk-heading-m">Date input</h2>
-        {{ govukDateInput({
+        <h2 class="nhsuk-heading-m">Date input</h2>
+        {{ dateInput({
           fieldset: {
             legend: {
               text: "When was your passport issued?"
@@ -114,8 +114,8 @@
           }
         }) }}
 
-        <h2 class="govuk-heading-m">Select</h2>
-        {{ govukSelect({
+        <h2 class="nhsuk-heading-m">Select</h2>
+        {{ select({
           label: {
             text: "Sort by"
           },
@@ -144,36 +144,36 @@
           }
         }) }}
 
-        <h2 class="govuk-heading-m">Fieldset</h2>
+        <h2 class="nhsuk-heading-m">Fieldset</h2>
         {% call govukFieldset({
           legend: {
-            classes: "govuk-fieldset__legend--s",
+            classes: "nhsuk-fieldset__legend--s",
             text: "What is your address?"
           }
         }) %}
-          {{ govukInput({
+          {{ input({
             label: {
               html: "Building and street <span class=\"govuk-visually-hidden\">line 1 of 2</span>"
             },
             decorate: "address-line-1"
           }) }}
 
-          {{ govukInput({
+          {{ input({
             label: {
               html: "<span class=\"govuk-visually-hidden\">Building and street line 2 of 2</span>"
             },
             decorate: "address-line-2"
           }) }}
 
-          {{ govukInput({
-            classes: "govuk-!-width-two-thirds",
+          {{ input({
+            classes: "nhsuk-!-width-two-thirds",
             label: {
               text: "Town or city"
             },
             decorate: "address-town"
           }) }}
 
-          {{ govukInput({
+          {{ input({
             classes: "govuk-input--width-10",
             label: {
               text: "Postcode"
@@ -187,11 +187,11 @@
           }) }}
         {% endcall %}
 
-        <h2 class="govuk-heading-m">Conditional answers</h2>
-        {{ govukRadios({
+        <h2 class="nhsuk-heading-m">Conditional answers</h2>
+        {{ radios({
           fieldset: {
             legend: {
-              classes: "govuk-fieldset__legend--s",
+              classes: "nhsuk-fieldset__legend--s",
               text: "How would you prefer to be contacted?"
             }
           },
@@ -203,7 +203,7 @@
             text: "Email",
             conditional: {
               html: govukInput({
-                classes: "govuk-!-width-one-third",
+                classes: "nhsuk-!-width-one-third",
                 label: {
                   text: "Email address"
                 },
@@ -226,7 +226,7 @@
             text: "Phone",
             conditional: {
               html: govukInput({
-                classes: "govuk-!-width-one-third",
+                classes: "nhsuk-!-width-one-third",
                 label: {
                   text: "Phone number"
                 },
@@ -252,7 +252,7 @@
           }
         }) }}
 
-        {{ govukButton({
+        {{ button({
           text: "Continue"
         }) }}
       </form>

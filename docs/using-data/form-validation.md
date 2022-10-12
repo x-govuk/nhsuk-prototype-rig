@@ -10,7 +10,7 @@ The rig incorporates [validatejs.org](https://validatejs.org) to provide client-
 You can validate forms by adding [validators](https://validatejs.org/#validators) to components using the `validation` option. For example, you could add the [`presence` validator](https://validatejs.org/#validators-presence) to a text input and provide [an error message to show](https://design-system.service.gov.uk/components/text-input/#error-messages) if it’s empty:
 
 ```njk
-{{ govukInput({
+{{ input({
   label: {
     text: "Full name"
   },
@@ -34,7 +34,7 @@ To validate dates entered into a [date input](https://design-system.service.gov.
 The following input will show an error message if no date is entered or, for example, the month value is not between 1 and 12:
 
 ```njk
-{{ govukDateInput({
+{{ dateInput({
   fieldset: {
     legend: {
       text: "When was your passport issued?"
@@ -81,10 +81,10 @@ The `conditional` validator takes 3 options:
 For example:
 
 ```njk
-{{ govukRadios({
+{{ radios({
   fieldset: {
     legend: {
-      classes: "govuk-fieldset__legend--s",
+      classes: "nhsuk-fieldset__legend--s",
       text: "How would you prefer to be contacted?"
     }
   },
@@ -96,7 +96,7 @@ For example:
     text: "Email",
     conditional: {
       html: govukInput({
-        classes: "govuk-!-width-one-third",
+        classes: "nhsuk-!-width-one-third",
         label: {
           text: "Email address"
         },
@@ -119,7 +119,7 @@ For example:
     text: "Phone",
     conditional: {
       html: govukInput({
-        classes: "govuk-!-width-one-third",
+        classes: "nhsuk-!-width-one-third",
         label: {
           text: "Phone number"
         },

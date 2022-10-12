@@ -3,25 +3,25 @@
 {% set title = "What is your name?" %}
 
 {% block pageNavigation %}
-  {{ govukBackLink({
+  {{ backLink({
     href: paths.back
   }) }}
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
       <form method="post" action="{{ paths.current }}" novalidate>
-        {{ govukInput({
+        {{ input({
           label: {
-            classes: "govuk-label--l",
+            classes: "nhsuk-label--l",
             isPageHeading: true,
             text: title
           },
           decorate: ["wizard", "name"]
         }) }}
 
-        {{ govukButton({
+        {{ button({
           html: "Continue"
         }) }}
       </form>

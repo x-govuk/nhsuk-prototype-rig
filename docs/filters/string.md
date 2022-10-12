@@ -17,7 +17,7 @@ Input
 Output
 
 ```html
-<p class="govuk-body">Visit <a class="govuk-link" href="https://www.gov.uk">GOV.UK</a>.</p>
+<p class="nhsuk-body">Visit <a class="nhsuk-link" href="https://www.gov.uk">GOV.UK</a>.</p>
 ```
 
 ### Heading sizes
@@ -40,10 +40,10 @@ Input
 Output
 
 ```html
-<h1 class="govuk-heading-xl">Heading level 1</h1>
-<h2 class="govuk-heading-l">Heading level 2</h2>
-<h3 class="govuk-heading-m">Heading level 3</h3>
-<h4 class="govuk-heading-s">Heading level 4</h4>
+<h1 class="nhsuk-heading-xl">Heading level 1</h1>
+<h2 class="nhsuk-heading-l">Heading level 2</h2>
+<h3 class="nhsuk-heading-m">Heading level 3</h3>
+<h4 class="nhsuk-heading-s">Heading level 4</h4>
 ```
 
 The [GOV.UK Design System recommends changing this](https://design-system.service.gov.uk/styles/typography/#headings) if a page feels unbalanced (heading classes don’t always need to correspond to the heading level). You can start headings using the smaller size by setting the `headingsStartWith` option.
@@ -57,10 +57,10 @@ Input
 Output
 
 ```html
-<h1 class="govuk-heading-l">Heading level 1</h1>
-<h2 class="govuk-heading-m">Heading level 2</h2>
-<h3 class="govuk-heading-s">Heading level 3</h3>
-<h4 class="govuk-heading-s">Heading level 4</h4>
+<h1 class="nhsuk-heading-l">Heading level 1</h1>
+<h2 class="nhsuk-heading-m">Heading level 2</h2>
+<h3 class="nhsuk-heading-s">Heading level 3</h3>
+<h4 class="nhsuk-heading-s">Heading level 4</h4>
 ```
 
 ## isString

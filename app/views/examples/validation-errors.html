@@ -3,12 +3,12 @@
 {% set title = "Help users to recover from validation errors" %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
       <form method="post" novalidate data-validate>
-        <h1 class="govuk-heading-l">Personal details</h1>
+        <h1 class="nhsuk-heading-l">Personal details</h1>
 
-        {{ govukInput({
+        {{ input({
           label: {
             text: "Full name"
           },
@@ -22,7 +22,7 @@
           }
         }) }}
 
-        {{ govukInput({
+        {{ input({
           label: {
             text: "Email address"
           },
@@ -40,7 +40,7 @@
           }
         }) }}
 
-        {{ govukButton({
+        {{ button({
           text: "Continue"
         }) }}
       </form>

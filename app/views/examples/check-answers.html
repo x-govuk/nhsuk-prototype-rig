@@ -3,13 +3,13 @@
 {% set title = "Check answers page" %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds-from-desktop">
-      <h1 class="govuk-heading-l">Check your answers before sending your application</h1>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds-from-desktop">
+      <h1 class="nhsuk-heading-l">Check your answers before sending your application</h1>
 
-      <h2 class="govuk-heading-m">Personal details</h2>
-      {{ govukSummaryList({
-        classes: "govuk-!-margin-bottom-9",
+      <h2 class="nhsuk-heading-m">Personal details</h2>
+      {{ summaryList({
+        classes: "nhsuk-!-margin-bottom-9",
         rows: [{
           key: {
             text: "Name"
@@ -69,9 +69,9 @@
         }]
       }) }}
 
-      <h2 class="govuk-heading-m">Application details</h2>
-      {{ govukSummaryList({
-        classes: "govuk-!-margin-bottom-9",
+      <h2 class="nhsuk-heading-m">Application details</h2>
+      {{ summaryList({
+        classes: "nhsuk-!-margin-bottom-9",
         rows: [{
           key: {
             text: "Previous application number"
@@ -131,13 +131,13 @@
         }]
       }) }}
 
-      <h2 class="govuk-heading-m">Now send your application</h2>
+      <h2 class="nhsuk-heading-m">Now send your application</h2>
       <p>By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
 
       <form method="post" novalidate>
         <input type="hidden" name="answers-checked" value="true">
 
-        {{ govukButton({
+        {{ button({
           text: "Accept and send"
         }) }}
       </form>

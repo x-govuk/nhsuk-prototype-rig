@@ -10,7 +10,7 @@ With session data, you can build complex, data-driven transactions. Yet adding d
 To collect a user’s email address, you would normally write:
 
 ```njk
-{{ govukInput({
+{{ input({
   label: {
     text: "Email address"
   },
@@ -35,7 +35,7 @@ The `decorate` attribute removes this overhead. It adds `name`, `value`, `id` (o
 The above example can be rewritten as:
 
 ```njk
-{{ govukInput({
+{{ input({
   label: {
     text: "Email address"
   },
@@ -46,9 +46,9 @@ The above example can be rewritten as:
 This would generate the following HTML:
 
 ```html
-<div class="govuk-form-group">
-  <label class="govuk-label" for="account-email-address">Email address</label>
-  <input class="govuk-input" id="account-email-address" name="[account][email-address]" type="text" value="jane.doe@example.com">
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="account-email-address">Email address</label>
+  <input class="nhsuk-input" id="account-email-address" name="[account][email-address]" type="text" value="jane.doe@example.com">
 </div>
 ```
 
@@ -59,7 +59,7 @@ This would generate the following HTML:
 If no value is given, day, month and year fields are shown by default. This works with the decorate attribute too:
 
 ```njk
-{{ govukDateInput({
+{{ dateInput({
   fieldset: {
     legend: {
       text: "When was your passport issued?"
@@ -72,7 +72,7 @@ If no value is given, day, month and year fields are shown by default. This work
 If you need custom attributes on the day, month or year inputs you need to use a `decorate` param for each field:
 
 ```njk
-{{ govukDateInput({
+{{ dateInput({
   fieldset: {
     legend: {
       text: "What is your date of birth?"

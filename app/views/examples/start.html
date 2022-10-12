@@ -1,13 +1,13 @@
 {% extends "layouts/default.html" %}
 
-{% set title = "Start page on GOV.UK" %}
+{% set title = "Start page on NHS.UK" %}
 
 {% block header %}
-  {{ govukHeader() }}
+  {{ header() }}
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
+  {{ breadcrumbs({
     items: [{
       text: "Home",
       href: "https://www.gov.uk"
@@ -21,31 +21,31 @@
 {% endblock %}
 
 {% block content %}
-  <h1 class="govuk-heading-xl">{{ serviceName }}</h1>
+  <h1 class="nhsuk-heading-xl">{{ serviceName }}</h1>
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
       <p>Use this service to:</p>
-      <ul class="govuk-list govuk-list--bullet">
+      <ul class="nhsuk-list nhsuk-list--bullet">
         <li>do something</li>
         <li>update your name, address or other details</li>
         <li>do something else</li>
       </ul>
       <p>Registering takes around 5 minutes.</p>
 
-      {{ govukButton({
-        classes: "govuk-!-margin-top-2 govuk-!-margin-bottom-9",
+      {{ button({
+        classes: "nhsuk-!-margin-top-2 nhsuk-!-margin-bottom-9",
         text: "Start now",
         isStartButton: true
       }) }}
 
-      <h2 class="govuk-heading-m">Before you start</h2>
+      <h2 class="nhsuk-heading-m">Before you start</h2>
       <p>You can also <a href="#">register by post</a>.</p>
       <p>The online service is also available in <a href="#">Welsh (Cymraeg)</a>.</p>
       <p>You can’t register for this service if you’re in the UK illegally.</p>
     </div>
 
-    <div class="govuk-grid-column-one-third">
+    <div class="nhsuk-grid-column-one-third">
       {{ xGovukRelatedNavigation({
         sections: [{
           items: [{

@@ -9,7 +9,7 @@ import {
 } from '../../../lib/filters/string.js'
 
 test('Converts a Markdown formatted string to HTML', t => {
-  t.is(govukMarkdown('**this** is _emphasis_'), '<p class="govuk-body"><strong>this</strong> is <em>emphasis</em></p>\n')
+  t.is(govukMarkdown('**this** is _emphasis_'), '<p class="nhsuk-body"><strong>this</strong> is <em>emphasis</em></p>\n')
 })
 
 test('Check if a value is classified as a `String`', t => {

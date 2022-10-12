@@ -11,22 +11,17 @@
 
 {% block content %}
   <form method="post">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds-from-desktop">
-        {{ govukNotificationBanner({
-          html: "Feature flags updated. <a class=\"govuk-notification-banner__link\" href=\"/\">Return to prototype homepage</a>.",
-          type: "success"
-        }) if success }}
-
-        <h1 class="govuk-heading-l">{{ title }}</h1>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds-from-desktop">
+        <h1 class="nhsuk-heading-l">{{ title }}</h1>
 
         {% for key, flag in data.features %}
-          {{ govukRadios({
+          {{ radios({
             classes: "govuk-radios--inline",
             fieldset: {
               legend: {
                 text: flag.name,
-                classes: "govuk-fieldset__legend--s"
+                classes: "nhsuk-fieldset__legend--s"
               }
             },
             hint: {
@@ -43,10 +38,10 @@
           }) }}
         {% else %}
           <p>Create a feature flag by adding an object to the <code>features</code> property in the default session data file:</p>
-          <pre class="govuk-!-font-size-19">{{ preCode }}</pre>
+          <pre class="nhsuk-!-font-size-19">{{ preCode }}</pre>
         {% endfor %}
 
-        {{ govukButton({
+        {{ button({
           html: "Save changes"
         }) if data.features | length > 0 }}
       </div>

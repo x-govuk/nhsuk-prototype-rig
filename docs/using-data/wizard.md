@@ -174,18 +174,18 @@ An example Nunjucks layout extending the default rig layout:
 ```njk
 {% extends "layouts/default.html" %}
 {% block pageNavigation %}
-  {{ govukBackLink({
+  {{ backLink({
     href: paths.back
   }) }}
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
       {% block beforeForm %}{% endblock %}
       <form method="post" novalidate>
         {% block form %}{% endblock %}
-        {{ govukButton({
+        {{ button({
           html: buttonText if buttonText else 'Continue'
         }) }}
       </form>
@@ -200,13 +200,13 @@ An example Nunjucks layout extending the default rig layout:
 {% extends "layouts/wizard.html" %}
 {% set title = "What is your name?" %}
 {% block pageNavigation %}
-  {{ govukBackLink({
+  {{ backLink({
     href: paths.back
   }) }}
 {% endblock %}
 
 {% block form %}
-  {{ govukInput({
+  {{ input({
     label: {
       classes: "govuk-label--l",
       isPageHeading: true,

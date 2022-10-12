@@ -3,8 +3,8 @@
 {% set title = "Help users to select from a long list of options" %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
       <form method="post" novalidate>
         {{ xGovukAutocomplete({
           id: "county",
@@ -70,7 +70,7 @@
           ]
         }) }}
 
-        {{ govukButton({
+        {{ button({
           text: "Continue"
         }) }}
       </form>

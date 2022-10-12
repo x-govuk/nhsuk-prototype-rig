@@ -56,7 +56,7 @@ To prevent an input being stored, use an underscore at the start of the name.
 Example using the `checked` function in a checkbox component:
 
 ```njk
-{{ govukCheckboxes({
+{{ checkboxes({
   name: "vehicle-features",
   fieldset: {
     legend: {
