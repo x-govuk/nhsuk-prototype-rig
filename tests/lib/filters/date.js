@@ -5,19 +5,22 @@ import {
   isoDateFromDateInput
 } from '../../../lib/filters/date.js'
 
-const now = Date.now()
-
 test('Converts an ISO 8601 datetime to a date using the GOV.UK style', t => {
   t.is(govukDate('2021-08-17'), '17 August 2021')
   t.is(govukDate('2021-08-17', 'truncate'), '17 Aug 2021')
   t.is(govukDate('2021-08'), 'August 2021')
   t.is(govukDate('2021-08', 'truncate'), 'Aug 2021')
 
-  const govukDateToday = String(Date.parse(govukDate('today')))
-  t.is(String(govukDateToday).slice(0, 4), String(now).slice(0, 4))
+  const now = new Date()
+  const govukDateToday = new Date(govukDate('today'))
+  t.is(govukDateToday.getDate(), now.getDate())
+  t.is(govukDateToday.getMonth(), now.getMonth())
+  t.is(govukDateToday.getFullYear(), now.getFullYear())
 
-  const govukDateTodayTruncated = Date.parse(govukDate('today', 'truncate'))
-  t.is(String(govukDateTodayTruncated).slice(0, 4), String(now).slice(0, 4))
+  const govukDateTodayTruncated = new Date(govukDate('today', 'truncate'))
+  t.is(govukDateTodayTruncated.getDate(), now.getDate())
+  t.is(govukDateTodayTruncated.getMonth(), now.getMonth())
+  t.is(govukDateTodayTruncated.getFullYear(), now.getFullYear())
 })
 
 test('Returns error converting an ISO 8601 datetime to a date using the GOV.UK style', t => {
