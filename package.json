@@ -54,7 +54,7 @@
     "luxon": "^3.0.1",
     "marked": "^4.0.12",
     "mock-req-res": "^1.2.0",
-    "nhsuk-frontend": "^6.1.2",
+    "nhsuk-frontend": "^6.2.0",
     "nhsuk-decorated-components": "^0.0.5",
     "nhsuk-prototype-rig": "file:./",
     "nodemon": "^2.0.13",
