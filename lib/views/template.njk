@@ -66,18 +66,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>{% block pageTitle %}NHS.UK prototype kit{% endblock %}</title>
+    <title>{% block pageTitle %}NHS.UK prototype rig{% endblock %}</title>
 
+    {% block nhsFont %}
     <link href="https://www.nhs.uk/" rel="preconnect">
     <link href="https://assets.nhs.uk/" rel="preconnect" crossorigin>
-
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
+    {% endblock %}
 
     {% block customStyles %}
     {% endblock %}
 
-    <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
+    {% block nhsJs %}
+      <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
+    {% endblock %}
 
     {% block headIcons %}
     <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
