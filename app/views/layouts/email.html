@@ -1,0 +1,44 @@
+{% extends "layouts/default.html" %}
+{% set htmlClasses = "app-email" %}
+{% set bodyClasses = "app-email__body" %}
+{% set containerClasses = "app-email__header-and-message-container" %}
+{% set mainClasses = "app-email__message" %}
+{% set title = subject %}
+{% block skipLink %}{% endblock %}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{% block bodyStart %}
+  <div class="nhsuk-width-container app-email__metadata-container">
+    <dl class="app-email__metadata">
+      <div>
+        <dt class="nhsuk-visually-hidden">Subject:</dt>
+        <dd><b class="nhsuk-heading-m nhsuk-u-margin-bottom-2">{{ subject }}</b></dd>
+      </div>
+      <div>
+        <dt>From:</dt>
+        <dd>{{ from or "NHS.UK <service@nhs.uk>" }}<dd>
+      </div>
+      <div>
+        <dt>To:</dt>
+        <dd>{{ to or "Name <name@example.com>" }}</dd>
+      </div>
+    </dl>
+  </div>
+{% endblock %}
+
+{% block content %}
+  {{ header({
+    service: {
+      name: serviceName,
+      href: "/"
+    },
+    showNav: "false",
+    showSearch: "false",
+    classes: "app-email__header"
+  }) }}
+
+  <div class="app-email__message-content">
+    {% block email %}{% endblock %}
+  </div>
+{% endblock %}
