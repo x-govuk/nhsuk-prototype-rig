@@ -1,12 +1,4 @@
----
-templateEngineOverride: md
-order: 5
-title: Filters
-description: A collection of Nunjucks template filters to manipulate and transform data.
-action: Browse filters
-tags:
-  - homepage
----
+# Filters
 
 The rig incorporates [GOV.UK Prototype Filters](https://x-govuk.github.io/govuk-prototype-filters/), a collection of Nunjucks template filters to manipulate and transform:
 

@@ -1,10 +1,6 @@
----
-order: 1
-title: Get started
-description: Get up and running in minutes.
----
+# Get started
 
-Like the GOV.UK Prototype Kit, the rig is built on the [Express](http://expressjs.com/) framework, and uses [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend).
+Like the NHS.UK Prototype Kit, the rig is built on the [Express](http://expressjs.com/) framework, and uses [NHS.UK Frontend](https://github.com/nhsuk/nhsuk-frontend).
 
 ## Requirements
 

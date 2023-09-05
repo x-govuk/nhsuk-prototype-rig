@@ -1,11 +1,4 @@
----
-templateEngineOverride: md
-order: 3
-title: Creating journeys with data
-description: Use and display data a user has entered over a few screens.
-eleventyNavigation:
-  parent: GOV.UK Prototype Rig
----
+# Creating journeys with data
 
 The Prototype Rig includes a simple way of saving data entered in forms, as well as displaying the saved data. Data is stored locally on the computer running the prototype and disappears at the end of the session, when the browser window is closed.
 

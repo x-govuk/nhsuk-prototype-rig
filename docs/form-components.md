@@ -1,9 +1,4 @@
----
-templateEngineOverride: md
-order: 1
-title: Form components
-description: The decorate helper makes it easy to build forms to collect data.
----
+# Form components
 
 With session data, you can build complex, data-driven transactions. Yet adding different values to form components can be repetitive, especially if you are using nested values.
 
@@ -30,7 +25,7 @@ Radios, checkboxes and select components also need to add a `checked` or `select
 
 ## Decorating forms
 
-The `decorate` attribute removes this overhead. It adds `name`, `value`, `id` (or `idPrefix`) and `checked`/`selected` attributes to a GOV.UK form component, with values based on where the data is stored.
+The `decorate` attribute removes this overhead. It adds `name`, `value`, `id` (or `idPrefix`) and `checked`/`selected` attributes to a NHS.UK form component, with values based on where the data is stored.
 
 The above example can be rewritten as:
 
@@ -54,7 +49,7 @@ This would generate the following HTML:
 
 ### Date inputs
 
-[The date input component](https://design-system.service.gov.uk/components/date-input/) accepts an optional `items` parameter.
+[The date input component](https://service-manual.nhs.uk/design-system/components/date-input) accepts an optional `items` parameter.
 
 If no value is given, day, month and year fields are shown by default. This works with the decorate attribute too:
 
