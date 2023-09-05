@@ -3,11 +3,10 @@
   "version": "0.0.6",
   "description": "Rapidly create prototypes of NHS.UK services",
   "keywords": [
-    "govuk",
+    "nhsuk",
     "design system",
     "prototyping"
   ],
-  "homepage": "https://x-govuk.github.io/nhsuk-prototype-rig/",
   "bugs": {
     "url": "https://github.com/x-govuk/nhsuk-prototype-rig/issues"
   },
@@ -24,8 +23,6 @@
     "url": "https://github.com/x-govuk/nhsuk-prototype-rig.git"
   },
   "scripts": {
-    "build-docs": "eleventy --config .eleventy.cjs",
-    "watch-docs": "eleventy --config .eleventy.cjs --serve",
     "build-assets": "rollup --config --silent",
     "watch-assets": "rollup --config --silent --watch",
     "serve": "nhsuk-prototype-rig",
@@ -67,10 +64,8 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
     "ava": "^5.0.0",
     "c8": "^8.0.0",
-    "govuk-eleventy-plugin": "^4.0.0",
     "sinon": "^15.0.0",
     "standard": "^17.0.0",
     "stylelint": "^14.6.1",

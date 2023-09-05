@@ -1,9 +1,6 @@
----
-templateEngineOverride: md
-order: 3
-title: Wizard helper
-description: The wizard helper makes it easy to build and iterate a ‘one thing per page’ user journey.
----
+# Wizard helper
+
+The wizard helper makes it easy to build and iterate a ‘one thing per page’ user journey.
 
 ## Importing the wizard helper
 

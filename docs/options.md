@@ -1,9 +1,4 @@
----
-layout: sub-navigation
-order: 2
-title: Configuration
-description: The rig has a number of options that allow you to customise the behaviour of your prototype.
----
+# Configuration
 
 The rig uses [cosmiconfig](https://github.com/davidtheclark/cosmiconfig) to find and load a configuration file. Starting from the current working directory, it looks for the following possible sources:
 
