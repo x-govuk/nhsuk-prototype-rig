@@ -8,7 +8,7 @@ export default [{
     'app/assets/javascripts/application.js'
   ],
   output: {
-    dir: 'public/javascripts',
+    dir: 'public',
     sourcemap: true
   },
   plugins: [
@@ -26,7 +26,7 @@ export default [{
     // Concatenate govuk-frontend, application and component styles
     scss({
       includePaths: ['node_modules'],
-      output: 'public/stylesheets/application.css',
+      fileName: 'application.css',
       quietDeps: true,
       sourceMap: true,
       verbose: false,
