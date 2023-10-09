@@ -3,7 +3,7 @@ $govuk-global-styles: false;
 $govuk-new-link-styles: true;
 $govuk-assets-path: "/govuk/assets/";
 
-@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+@import "node_modules/nhsuk-frontend/packages/nhsuk";
 
 // Import GOV.UK Frontend
 @import "govuk-frontend/govuk/all";
@@ -11,7 +11,7 @@ $govuk-assets-path: "/govuk/assets/";
 // Import GOV.UK Prototype Components
 @import "@x-govuk/govuk-prototype-components/x-govuk/all";
 
-@import "_email.scss";
-@import "_unbranded.scss";
+@import "email";
+@import "unbranded";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
