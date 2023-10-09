@@ -1,85 +1,60 @@
-$email-width: 650px;
+$email-page-width: 640px;
 
-.app-email,
-.app-email__body {
+.nhs-width-container--email {
+  margin: 0 auto;
+  max-width: $email-page-width;
+}
+
+.app-email {
   background-color: transparent;
 }
 
-.app-email__metadata-container,
-.app-email__header-and-message-container {
-  max-width: $email-width;
-  margin: govuk-spacing(6) auto;
-}
-
-.app-email__header-and-message-container {
-  background-color: govuk-colour("white");
-  border: 1px solid $govuk-border-colour;
-  border-top: govuk-spacing(4) solid $govuk-border-colour;
-  border-radius: 10px 10px 0 0;
-}
-
 .app-email__header {
-  padding-left: nhsuk-spacing(5);
-  padding-right: nhsuk-spacing(5);
-
-  @include govuk-media-query($until: tablet) {
-    padding-left: govuk-spacing(3);
-    padding-right: govuk-spacing(3);
+  .nhsuk-header__container {
+    @include nhsuk-responsive-padding(5, "left");
+    @include nhsuk-responsive-padding(5, "right");
+    margin: 0;
   }
-
-  .nhsuk-width-container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.app-email__message {
-  max-width: $email-width;
-  padding-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include govuk-media-query($until: tablet) {
-    margin-left: govuk-spacing(0);
-    margin-right: govuk-spacing(0);
-  }
-
-  * {
-    font-family: HelveticaNeue, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  }
-
-  :last-child {
-    margin-bottom: 0;
-  }
-}
-
-.app-email__message-content {
-  margin-top: nhsuk-spacing(5);
-  margin-left: nhsuk-spacing(5);
-  margin-right: nhsuk-spacing(5);
 }
 
 .app-email__metadata {
-  font: caption;
-  margin: 0;
+  @include nhsuk-typography-responsive(16);
+  @include nhsuk-responsive-margin(5);
 
-  @include govuk-media-query($until: desktop) {
-    margin-left: govuk-spacing(3);
-    margin-right: govuk-spacing(3);
+  @include mq($from: desktop) {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   div {
     display: block;
-    margin-bottom: govuk-spacing(1);
+    margin-bottom: nhsuk-spacing(1);
   }
 
   dt {
     display: inline-block;
-    margin-right: govuk-spacing(1);
+    margin-right: nhsuk-spacing(1);
   }
 
   dd {
     display: inline-block;
     margin-left: 0;
   }
+}
+
+.app-email__message {
+  background-color: $color_nhsuk-white;
+  border: 1px solid $color_nhsuk-grey-2;
+  border-radius: 10px 10px 0 0;
+  border-top: nhsuk-spacing(4) solid $color_nhsuk-grey-2;
+  padding: 0;
+  max-width: $email-page-width;
+
+  * {
+    font-family: system-ui, sans-serif;
+  }
+}
+
+.app-email__message-content {
+  @include nhsuk-responsive-padding(5);
 }

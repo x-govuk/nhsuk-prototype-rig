@@ -1,23 +1,23 @@
 {% extends "layouts/default.html" %}
-{% set htmlClasses = "app-email" %}
-{% set bodyClasses = "app-email__body" %}
-{% set containerClasses = "app-email__header-and-message-container" %}
+
+{% set bodyClasses = "app-email" %}
 {% set mainClasses = "app-email__message" %}
+{% set containerClasses = "nhs-width-container--email" %}
 {% set title = subject %}
 {% block skipLink %}{% endblock %}
 {% block header %}{% endblock %}
 {% block footer %}{% endblock %}
 
 {% block bodyStart %}
-  <div class="nhsuk-width-container app-email__metadata-container">
+  <div class="nhsuk-width-container nhs-width-container--email">
     <dl class="app-email__metadata">
       <div>
-        <dt class="nhsuk-visually-hidden">Subject:</dt>
-        <dd><b class="nhsuk-heading-m nhsuk-u-margin-bottom-2">{{ subject }}</b></dd>
+        <dt class="nhsuk-u-visually-hidden">Subject:</dt>
+        <dd><b class="govuk-heading-m govuk-!-margin-bottom-2">{{ subject }}</b></dd>
       </div>
       <div>
         <dt>From:</dt>
-        <dd>{{ from or "NHS.UK <service@nhs.uk>" }}<dd>
+        <dd>{{ from or "GOV.UK <service@gov.uk>" }}<dd>
       </div>
       <div>
         <dt>To:</dt>
@@ -29,7 +29,7 @@
 
 {% block content %}
   {{ header({
-    service: {
+    transactionalService: {
       name: serviceName,
       href: "/"
     },
