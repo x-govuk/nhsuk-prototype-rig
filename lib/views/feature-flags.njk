@@ -13,6 +13,11 @@
   <form method="post">
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
+        {{ govukNotificationBanner({
+          html: 'Feature flags updated. <a class="govuk-notification-banner__link" href="/">Return to prototype homepage</a>.',
+          type: "success"
+        }) if success }}
+
         <h1 class="nhsuk-heading-l">{{ title }}</h1>
 
         {% for key, flag in data.features %}
