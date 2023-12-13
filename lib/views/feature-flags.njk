@@ -1,13 +1,13 @@
 {% extends defaultRigLayout or "layouts/default.html" %}
 
 {% set title = "Feature flags" %}
-{% set preCode = "features: {
-  'feature-name': {
+{% set preCode = 'features: {
+  "feature-name": {
     on: true,
-    name: 'Name of feature',
-    description: 'Brief description of feature.'
+    name: "Name of feature",
+    description: "Brief description of feature."
   }
-}" %}
+}' %}
 
 {% block content %}
   <form method="post">
