@@ -4,7 +4,7 @@ A WIP NHS.UK of the [GOV.UK Prototype Rig](https://x-govuk.github.io/govuk-proto
 
 ## Requirements
 
-* Node.js v18
+* Node.js v20
 
 ## Installation
 
