@@ -29,8 +29,8 @@
     "start": "npm-run-all --serial build-assets serve",
     "dev": "npm-run-all --parallel watch-assets serve",
     "lint": "standard && stylelint 'app/**/*.scss'",
-    "test": "ava",
-    "coverage": "c8 ava"
+    "test": "NODE_ENV=test node --test",
+    "coverage": "NODE_ENV=test node --test --experimental-test-coverage"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.0",
@@ -63,8 +63,6 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "ava": "^6.0.0",
-    "c8": "^8.0.0",
     "mock-req-res": "^1.2.0",
     "sinon": "^17.0.0",
     "standard": "^17.0.0",
@@ -74,16 +72,6 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "c8": {
-    "exclude": [
-      "app",
-      "tests"
-    ],
-    "reporter": [
-      "text",
-      "lcovonly"
-    ]
   },
   "engines": {
     "node": "^20"
