@@ -15,3 +15,17 @@ nodemon({
     'package/*'
   ]
 })
+
+let ignoreExit = false
+
+nodemon.on('restart', () => {
+  ignoreExit = true
+})
+
+nodemon.on('exit', () => {
+  if (ignoreExit) {
+    ignoreExit = false
+    return
+  };
+  process.exit()
+})
