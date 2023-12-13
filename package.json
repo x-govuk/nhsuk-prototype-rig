@@ -15,12 +15,12 @@
     "lib"
   ],
   "bin": {
-    "nhsuk-prototype-rig": "./bin.js"
+    "nhsuk-prototype-rig": "bin.js"
   },
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/x-govuk/nhsuk-prototype-rig.git"
+    "url": "git+https://github.com/x-govuk/nhsuk-prototype-rig.git"
   },
   "scripts": {
     "build-assets": "rollup --config --silent",
