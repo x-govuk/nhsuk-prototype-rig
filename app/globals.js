@@ -2,16 +2,15 @@
  * Prototype specific global functions for use in Nunjucks templates.
  *
  * You can override Prototype Rig globals by creating global methods
- * with the same name.
- *
- * You can delete this file if you don’t need your own globals.
+ * with the same name. You can delete this file if you don’t need your
+ * own globals.
+ * @returns {object} Globals
  */
 export default () => {
   const globals = {}
 
   /**
-   * Add your methods to the globals object below this comment block.
-   *
+   * Add your methods to the globals object below this comment block
    * @example
    * globals.sayHello = function (name) {
    *   return `Hello, ${name}!`
