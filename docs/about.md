@@ -12,17 +12,17 @@ The Prototype Rig works in exactly the same way as the NHS Prototype Kit. It sto
 
 ## Features
 
-* Default 404 page
-* Error page that shows the cause of the error
-* [Feature flags](feature-flags.md)
-* Session data output to the JavaScript console
-* Ability to use `async` functions for session data
-* Support for [form validation](form-validation.md)
-* Form [component helper](form-components.md)
-* Nunjucks [template filters](filters.md)
-* Common [components](components.md) not currently in the GOV.UK or NHS.UK design systems
-* A [wizard helper](wizard.md) to help create user journeys with branching logic
-* Full documentation, with code documented using [JSDoc](https://jsdoc.app).
+- Default 404 page
+- Error page that shows the cause of the error
+- [Feature flags](feature-flags.md)
+- Session data output to the JavaScript console
+- Ability to use `async` functions for session data
+- Support for [form validation](form-validation.md)
+- Form [component helper](form-components.md)
+- Nunjucks [template filters](filters.md)
+- Common [components](components.md) not currently in the GOV.UK or NHS.UK design systems
+- A [wizard helper](wizard.md) to help create user journeys with branching logic
+- Full documentation, with code documented using [JSDoc](https://jsdoc.app).
 
 ## Privacy
 

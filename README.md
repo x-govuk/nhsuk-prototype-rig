@@ -4,18 +4,18 @@ A WIP NHS.UK of the [GOV.UK Prototype Rig](https://x-govuk.github.io/govuk-proto
 
 ## Requirements
 
-* Node.js v20
+- Node.js v20
 
 ## Installation
 
 1. Clone this repository:\
-`git clone git@github.com:x-govuk/nhsuk-prototype-rig.git`
+   `git clone git@github.com:x-govuk/nhsuk-prototype-rig.git`
 
 2. Install the dependencies:\
-`npm install`
+   `npm install`
 
 3. Start the application:\
-`npm start`
+   `npm start`
 
 You can change the service name by changing the `prototype.serviceName` value in `package.json`.
 

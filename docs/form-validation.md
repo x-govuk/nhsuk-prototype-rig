@@ -67,9 +67,9 @@ If an option is selected, but its conditional input is empty, the `conditional` 
 
 The `conditional` validator takes 3 options:
 
-* `dependentOn.name` is the name of the checkbox or radio group
-* `dependentOn.value` is the value of the option in which the conditional input is provided
-* `message` is the error message to show if the input is empty
+- `dependentOn.name` is the name of the checkbox or radio group
+- `dependentOn.value` is the value of the option in which the conditional input is provided
+- `message` is the error message to show if the input is empty
 
 For example:
 

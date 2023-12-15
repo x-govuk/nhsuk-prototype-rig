@@ -17,9 +17,9 @@ To collect a user’s email address, you would normally write:
 
 3 separate parameters are needed to store and display data. Each uses the same value, but formatted in a slightly different way:
 
-* `id`, which uses kebab case
-* `name`, which uses object notation
-* `value`, which also uses object notation, but proceeded by `data.`
+- `id`, which uses kebab case
+- `name`, which uses object notation
+- `value`, which also uses object notation, but proceeded by `data.`
 
 Radios, checkboxes and select components also need to add a `checked` or `selected` attribute to any option that matches the stored value, and date inputs need individual values for day, month and year fields.
 

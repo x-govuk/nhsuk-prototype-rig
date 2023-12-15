@@ -12,10 +12,10 @@ import { wizard } from 'govuk-prototype-rig'
 
 The `wizard` helper takes two parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :---------- |
+| Name        | Type   | Description                                                                                    |
+| :---------- | :----- | :--------------------------------------------------------------------------------------------- |
 | **journey** | object | **Required.** A journey object, which defines the default user journey and any branching rules |
-| **req** | object | **Required.** The express request object |
+| **req**     | object | **Required.** The express request object                                                       |
 
 It returns a `paths` object with paths for the next, back and the current pages.
 
@@ -98,11 +98,11 @@ Each path can have multiple forks, they are evaluated in order – the user will
 
 In this example we:
 
-* ask the user their name
-* ask if they have a National Insurance number, then:
-  * skip the ‘What is your National Insurance number?’ question if they do not have a number
-  * continue to the ‘What is your National Insurance number?’ question if they do
-* ask for their email address
+- ask the user their name
+- ask if they have a National Insurance number, then:
+  - skip the ‘What is your National Insurance number?’ question if they do not have a number
+  - continue to the ‘What is your National Insurance number?’ question if they do
+- ask for their email address
 
 ```js
 {
