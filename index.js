@@ -1,3 +1,3 @@
-import wizard from 'govuk-prototype-wizard'
+import wizard from "@x-govuk/govuk-prototype-wizard";
 
-export { wizard }
+export { wizard };
