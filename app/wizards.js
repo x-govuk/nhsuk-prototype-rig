@@ -1,6 +1,6 @@
 import { wizard } from 'nhsuk-prototype-rig'
 
-export function exampleWizard (req) {
+export function exampleWizard(req) {
   const journey = {
     '/examples/wizard': {},
     '/examples/wizard/name': {},

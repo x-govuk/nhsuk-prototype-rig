@@ -54,13 +54,12 @@ describe('Server', () => {
   })
 
   it('Shows feature flags confirmation page', async () => {
-    const response = await request.post('/feature-flags')
-      .send({
-        features: {
-          foo: { name: 'Foo', on: 'true' },
-          bar: { name: 'Bar', on: 'false' }
-        }
-      })
+    const response = await request.post('/feature-flags').send({
+      features: {
+        foo: { name: 'Foo', on: 'true' },
+        bar: { name: 'Bar', on: 'false' }
+      }
+    })
 
     assert.equal(response.status, 200)
     assert.match(response.text, /Feature flags updated/)
@@ -76,7 +75,8 @@ describe('Server', () => {
   it('Shows password page with validation error', async () => {
     process.env.NODE_ENV = 'production'
     process.env.PASSWORD = 'test'
-    const response = await request.post('/prototype-password')
+    const response = await request
+      .post('/prototype-password')
       .send({ _password: 'incorrect' })
 
     assert.equal(response.status, 422)
@@ -86,7 +86,8 @@ describe('Server', () => {
   it('Redirects authenticated user to previous page', async () => {
     process.env.NODE_ENV = 'production'
     process.env.PASSWORD = 'test'
-    const response = await request.post('/prototype-password')
+    const response = await request
+      .post('/prototype-password')
       .send({ _password: 'test' })
       .send({ returnUrl: '/' })
 

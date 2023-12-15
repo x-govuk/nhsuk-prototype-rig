@@ -39,7 +39,12 @@ describe('Authentication middleware', () => {
     authentication(request, response, next)
 
     assert.equal(response.redirect.calledOnce, true)
-    assert.equal(response.redirect.calledWith('https://undefined/prototype-password?returnUrl='), true)
+    assert.equal(
+      response.redirect.calledWith(
+        'https://undefined/prototype-password?returnUrl='
+      ),
+      true
+    )
   })
 
   it('Allows authenticated user to continue', (t) => {
@@ -47,7 +52,8 @@ describe('Authentication middleware', () => {
 
     const request = mockRequest({
       cookies: {
-        authentication: '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08'
+        authentication:
+          '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08'
       },
       path: '/'
     })
