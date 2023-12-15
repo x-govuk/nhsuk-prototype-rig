@@ -28,10 +28,16 @@
     "serve": "nhsuk-prototype-rig",
     "start": "npm-run-all --serial build-assets serve",
     "dev": "npm-run-all --parallel watch-assets serve",
-    "lint": "standard && stylelint 'app/**/*.scss'",
+    "lint:prettier": "prettier . --check",
+    "lint:js": "eslint '**/*.js'",
+    "lint:scss": "stylelint '**/*.scss'",
+    "lint": "npm run lint:prettier && npm run lint:js && npm run lint:scss",
     "test": "NODE_ENV=test node --test",
     "coverage": "NODE_ENV=test node --test --experimental-test-coverage",
     "release": "np"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.0",
@@ -64,22 +70,24 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.4.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.0",
     "mock-req-res": "^1.2.0",
     "np": "^9.2.0",
+    "prettier": "^3.1.0",
     "sinon": "^17.0.0",
     "standard": "^17.0.0",
     "stylelint": "^15.0.0",
-    "stylelint-config-gds": "^1.0.0",
+    "stylelint-config-gds": "^1.1.0",
     "supertest": "^6.2.3"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "engines": {
-    "node": "^20"
+    "node": ">=20"
   },
-  "type": "module",
-  "stylelint": {
-    "extends": "stylelint-config-gds/scss"
-  }
+  "type": "module"
 }
