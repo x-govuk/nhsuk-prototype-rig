@@ -44,7 +44,7 @@
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@x-govuk/govuk-prototype-components": "^3.0.0",
     "@x-govuk/govuk-prototype-filters": "^1.1.0",
-    "@x-govuk/govuk-prototype-wizard": "^0.3.0",
+    "@x-govuk/govuk-prototype-wizard": "^0.4.0",
     "browser-sync": "^3.0.0",
     "client-sessions": "^0.8.0",
     "cookie-parser": "^1.4.6",
