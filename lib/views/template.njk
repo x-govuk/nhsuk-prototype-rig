@@ -163,7 +163,9 @@
       {%- if useAutoStoreData %}
       <script src="/auto-store-data.js"></script>
       {% endif -%}
+      {%- if showLogs %}
       <script>console.log({{ data | dump | safe }});</script>
+      {% endif -%}
     {% endblock %}
   </body>
 </html>
