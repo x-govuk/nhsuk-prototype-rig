@@ -40,6 +40,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@inquirer/prompts": "^6.0.0",
     "@rollup/plugin-commonjs": "^26.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@x-govuk/govuk-prototype-components": "^3.0.0",
@@ -54,7 +55,6 @@
     "express-rate-limit": "^7.1.0",
     "express-session": "^1.13.0",
     "govuk-frontend": "^5.0.0",
-    "inquirer": "^9.0.0",
     "lodash": "^4.17.21",
     "nhsuk-decorated-components": "^0.0.8",
     "nhsuk-frontend": "^8.0.0",
@@ -80,7 +80,7 @@
     "mock-req-res": "^1.2.0",
     "np": "^10.0.0",
     "prettier": "^3.1.0",
-    "sinon": "^18.0.0",
+    "sinon": "^19.0.0",
     "standard": "^17.0.0",
     "stylelint": "^16.0.0",
     "stylelint-config-gds": "^2.0.0",
