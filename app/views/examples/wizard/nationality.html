@@ -2,13 +2,11 @@
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 {% set title = "What is your nationality?" %}
 
-{% block pageNavigation %}
-  <div class="nhsuk-width-container">
-    {{ backLink({
-      href: paths.back,
-      classes: "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
-    }) }}
-  </div>
+{% block beforeContent %}
+  {{ backLink({
+    href: paths.back,
+    classes: "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
 {% endblock %}
 
 {% block content %}

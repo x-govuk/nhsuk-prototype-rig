@@ -2,13 +2,10 @@
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 {% set title = "Asking users for a date" %}
 
-{% block pageNavigation %}
-  <div class="nhsuk-width-container">
-    {{ backLink({
-      href: "#",
-      classes: "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
-    }) }}
-  </div>
+{% block beforeContent %}
+  {{ backLink({
+    href: "#"
+  }) }}
 {% endblock %}
 
 {% block content %}

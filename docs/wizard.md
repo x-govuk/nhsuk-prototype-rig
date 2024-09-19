@@ -170,7 +170,7 @@ An example Nunjucks layout extending the default rig layout:
 
 ```njk
 {% extends "layouts/default.html" %}
-{% block pageNavigation %}
+{% block beforeContent %}
   {{ backLink({
     href: paths.back
   }) }}
@@ -196,7 +196,7 @@ An example Nunjucks layout extending the default rig layout:
 ```njk
 {% extends "layouts/wizard.html" %}
 {% set title = "What is your name?" %}
-{% block pageNavigation %}
+{% block beforeContent %}
   {{ backLink({
     href: paths.back
   }) }}

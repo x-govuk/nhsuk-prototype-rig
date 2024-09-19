@@ -1,27 +1,27 @@
-{%- from "action-link/macro.njk" import actionLink %}
-{%- from "back-link/macro.njk" import backLink %}
-{%- from "breadcrumb/macro.njk" import breadcrumb %}
-{%- from "card/macro.njk" import card %}
-{%- from "contents-list/macro.njk" import contentsList %}
-{%- from "details/macro.njk" import details %}
-{%- from "do-dont-list/macro.njk" import list %}
-{%- from "error-message/macro.njk" import errorMessage %}
-{%- from "error-summary/macro.njk" import errorSummary %}
-{%- from "fieldset/macro.njk" import fieldset %}
-{%- from "footer/macro.njk" import footer %}
-{%- from "header/macro.njk" import header %}
-{%- from "hero/macro.njk" import hero %}
-{%- from "hint/macro.njk" import hint %}
-{%- from "images/macro.njk" import image %}
-{%- from "inset-text/macro.njk" import insetText %}
-{%- from "label/macro.njk" import label %}
-{%- from "pagination/macro.njk" import pagination %}
-{%- from "skip-link/macro.njk" import skipLink %}
-{%- from "summary-list/macro.njk" import summaryList %}
-{%- from "tabs/macro.njk" import tabs %}
-{%- from "tables/macro.njk" import table %}
-{%- from "tag/macro.njk" import tag %}
-{%- from "warning-callout/macro.njk" import warningCallout %}
+{%- from "components/action-link/macro.njk" import actionLink %}
+{%- from "components/back-link/macro.njk" import backLink %}
+{%- from "components/breadcrumb/macro.njk" import breadcrumb %}
+{%- from "components/card/macro.njk" import card %}
+{%- from "components/contents-list/macro.njk" import contentsList %}
+{%- from "components/details/macro.njk" import details %}
+{%- from "components/do-dont-list/macro.njk" import list %}
+{%- from "components/error-message/macro.njk" import errorMessage %}
+{%- from "components/error-summary/macro.njk" import errorSummary %}
+{%- from "components/fieldset/macro.njk" import fieldset %}
+{%- from "components/footer/macro.njk" import footer %}
+{%- from "components/header/macro.njk" import header %}
+{%- from "components/hero/macro.njk" import hero %}
+{%- from "components/hint/macro.njk" import hint %}
+{%- from "components/images/macro.njk" import image %}
+{%- from "components/inset-text/macro.njk" import insetText %}
+{%- from "components/label/macro.njk" import label %}
+{%- from "components/pagination/macro.njk" import pagination %}
+{%- from "components/skip-link/macro.njk" import skipLink %}
+{%- from "components/summary-list/macro.njk" import summaryList %}
+{%- from "components/tabs/macro.njk" import tabs %}
+{%- from "components/tables/macro.njk" import table %}
+{%- from "components/tag/macro.njk" import tag %}
+{%- from "components/warning-callout/macro.njk" import warningCallout %}
 
 {%- from "x-nhsuk/decorated/button/macro.njk" import button with context %}
 {%- from "x-nhsuk/decorated/checkboxes/macro.njk" import checkboxes with context %}
@@ -96,7 +96,6 @@
     {% endblock %}
 
     {% block head %}{% endblock %}
-
   </head>
 
   <body class="{{ bodyClasses }}" {%- for attribute, value in bodyAttributes %} {{attribute}}="{{value}}"{% endfor %}>
@@ -115,11 +114,9 @@
         {{ header({}) }}
       {% endblock %}
 
-      {% block beforeContent %}{% endblock %}
-
       {% block main %}
         <div class="nhsuk-width-container {{ containerClasses }}">
-          {% block outerContent %}{% endblock %}
+          {% block beforeContent %}{% endblock %}
           <main class="nhsuk-main-wrapper {{ mainClasses }}" id="maincontent" role="main">
             {% block content %}{% endblock %}
           </main>
