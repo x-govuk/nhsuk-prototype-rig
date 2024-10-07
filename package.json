@@ -40,8 +40,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@inquirer/prompts": "^6.0.0",
-    "@rollup/plugin-commonjs": "^26.0.0",
+    "@inquirer/prompts": "^7.0.0",
+    "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@x-govuk/govuk-prototype-components": "^3.0.0",
     "@x-govuk/govuk-prototype-filters": "^1.1.0",
