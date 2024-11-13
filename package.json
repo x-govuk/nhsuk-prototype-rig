@@ -12,21 +12,17 @@
   },
   "license": "MIT",
   "files": [
+    "bin",
     "lib"
   ],
   "bin": {
-    "nhsuk-prototype-rig": "bin.js"
+    "nhsuk-prototype-rig": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/x-govuk/nhsuk-prototype-rig.git"
   },
   "scripts": {
-    "build-assets": "rollup --config --silent",
-    "watch-assets": "rollup --config --silent --watch",
-    "serve": "nhsuk-prototype-rig",
-    "start": "npm-run-all --serial build-assets serve",
-    "dev": "npm-run-all --parallel watch-assets serve",
     "lint:prettier": "prettier . --check",
     "lint:prettier:fix": "prettier . --write",
     "lint:js": "eslint '**/*.js'",
@@ -35,6 +31,8 @@
     "lint:scss:fix": "stylelint '**/*.scss' --fix",
     "lint": "npm run lint:prettier && npm run lint:js && npm run lint:scss",
     "lint:fix": "npm run lint:prettier:fix && npm run lint:js:fix && npm run lint:scss:fix",
+    "dev": "nhsuk-prototype-rig --watch",
+    "start": "nhsuk-prototype-rig",
     "test": "NODE_ENV=test node --test",
     "coverage": "NODE_ENV=test node --test --experimental-test-coverage",
     "release": "np"
@@ -44,8 +42,6 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.0.0",
-    "@rollup/plugin-commonjs": "^28.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.0",
     "@x-govuk/govuk-prototype-filters": "^1.1.0",
     "browser-sync": "^3.0.0",
     "client-sessions": "^0.8.0",
@@ -53,6 +49,8 @@
     "cookie-parser": "^1.4.6",
     "cosmiconfig": "^9.0.0",
     "dotenv": "^16.0.0",
+    "esbuild": "^0.24.0",
+    "esbuild-sass-plugin": "^3.3.1",
     "express": "^4.17.3",
     "express-rate-limit": "^7.1.0",
     "express-session": "^1.13.0",
@@ -60,13 +58,8 @@
     "nhsuk-decorated-components": "^0.1.0",
     "nhsuk-frontend": "^9.0.0",
     "nhsuk-prototype-rig": "file:./",
-    "npm-run-all": "^4.1.5",
     "nunjucks": "^3.2.1",
     "portscanner": "^2.2.0",
-    "rollup": "^4.0.0",
-    "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-scss": "^4.0.0",
-    "sass": "^1.49.9",
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
