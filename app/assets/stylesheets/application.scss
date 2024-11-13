@@ -6,7 +6,7 @@ $govuk-success-colour: #007f3b;
 $govuk-global-styles: false;
 $govuk-assets-path: "/govuk/assets/";
 
-@import "node_modules/nhsuk-frontend/packages/nhsuk";
+@import "nhsuk-frontend/packages/nhsuk";
 
 // Import GOV.UK Frontend
 @import "govuk-frontend/dist/govuk/all";

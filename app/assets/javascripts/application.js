@@ -1,6 +1,3 @@
-// Sass entry point for rollup.js
-import '../stylesheets/application.scss'
-
 // Import GOV.UK Frontend
 import { initAll as GOVUKFrontend } from 'govuk-frontend'
 
