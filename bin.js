@@ -1,22 +1,15 @@
 #!/usr/bin/env node
-import nodemon from 'nodemon'
+import { browserSyncConfig } from './lib/browser-sync.js'
+import { findAvailablePort, getEnv } from './lib/environment.js'
+import app from './lib/server.js'
 
-nodemon({
-  script: './node_modules/nhsuk-prototype-rig/lib/server.js',
-  watch: ['.env', '**/*.js', '**/*.json'],
-  ignore: ['public/*', 'app/assets/*', 'node_modules/*', 'package/*']
-})
-
-let ignoreExit = false
-
-nodemon.on('restart', () => {
-  ignoreExit = true
-})
-
-nodemon.on('exit', () => {
-  if (ignoreExit) {
-    ignoreExit = false
-    return
+findAvailablePort((port) => {
+  const isProduction = getEnv() === 'production'
+  if (isProduction) {
+    console.info(`Listening on port ${port}`)
+    app.listen(port)
+  } else {
+    const proxyPort = port - 50
+    app.listen(proxyPort, () => browserSyncConfig(app, port, proxyPort))
   }
-  process.exit()
 })
