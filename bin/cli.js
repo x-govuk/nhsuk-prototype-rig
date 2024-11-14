@@ -7,9 +7,9 @@ import chokidar from 'chokidar'
 import copy from 'rollup-plugin-copy'
 import { rollup, watch } from 'rollup'
 import * as sass from 'sass'
-import { browserSyncConfig } from './lib/browser-sync.js'
-import { findAvailablePort, getEnv } from './lib/environment.js'
-import app from './lib/server.js'
+import { browserSyncConfig } from '../lib/browser-sync.js'
+import { findAvailablePort, getEnv } from '../lib/environment.js'
+import app from '../lib/server.js'
 
 // Environment
 const env = getEnv()

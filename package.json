@@ -12,10 +12,11 @@
   },
   "license": "MIT",
   "files": [
+    "bin",
     "lib"
   ],
   "bin": {
-    "nhsuk-prototype-rig": "bin.js"
+    "nhsuk-prototype-rig": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
