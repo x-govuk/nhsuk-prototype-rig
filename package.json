@@ -17,7 +17,6 @@
   "bin": {
     "nhsuk-prototype-rig": "bin.js"
   },
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/x-govuk/nhsuk-prototype-rig.git"
@@ -49,7 +48,6 @@
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@x-govuk/govuk-prototype-components": "^3.0.0",
     "@x-govuk/govuk-prototype-filters": "^1.1.0",
-    "@x-govuk/govuk-prototype-wizard": "^0.4.0",
     "browser-sync": "^3.0.0",
     "client-sessions": "^0.8.0",
     "compression": "^1.7.4",
