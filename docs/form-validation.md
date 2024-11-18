@@ -88,7 +88,7 @@ For example:
     value: "email",
     text: "Email",
     conditional: {
-      html: govukInput({
+      html: input({
         classes: "nhsuk-u-width-one-third",
         label: {
           text: "Email address"
@@ -111,7 +111,7 @@ For example:
     value: "phone",
     text: "Phone",
     conditional: {
-      html: govukInput({
+      html: input({
         classes: "nhsuk-u-width-one-third",
         label: {
           text: "Phone number"

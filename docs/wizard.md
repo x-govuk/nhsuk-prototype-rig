@@ -205,7 +205,7 @@ An example Nunjucks layout extending the default rig layout:
 {% block form %}
   {{ input({
     label: {
-      classes: "govuk-label--l",
+      classes: "nhsuk-label--l",
       isPageHeading: true,
       text: title
     },

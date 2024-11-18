@@ -6,16 +6,15 @@
   <form method="post">
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
-        {{ govukNotificationBanner({
-          html: 'Session data has been cleared. <a class="govuk-notification-banner__link" href="/">Return to prototype homepage</a>.',
-          type: "success"
-        }) if success }}
-
         <h1 class="nhsuk-heading-l">{{ title }}</h1>
 
         {{ warningCallout({
-          heading: "Clearing the session",
-          HTML: "<p>This will clear all of the data entered in this session</p>"
+          heading: "Session data cleared",
+          HTML: '<p><a class="nhsuk-link" href="/">Return to prototype homepage</a>.</p>'
+        }) if success }}
+
+        {{ insetText({
+          html: "<p>This will clear all of the data entered in this session</p>"
         }) }}
 
         {{ button({

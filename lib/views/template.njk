@@ -140,16 +140,13 @@
     {% block bodyEnd %}
       {%- if data.validations %}
       <template id="nhsuk-error-summary-template">
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-two-thirds">
-            {{ errorSummary({
-              titleText: "There is a problem"
-            }) | indent(4) }}
-          </div>
-        </div>
+        {{ errorSummary({
+          classes: "nhsuk-u-width-two-thirds",
+          titleText: "There is a problem"
+        }) | indent(4) }}
       </template>
       <template id="nhsuk-error-message-template">
-        {{ govukErrorMessage() | indent(4) }}
+        {{ errorMessage() | indent(4) }}
       </template>
       <script src="/validate.js"></script>
       <script src="/form-validation.js"></script>

@@ -45,7 +45,7 @@ describe('Server', () => {
     const response = await request.post('/clear-session-data')
 
     assert.equal(response.status, 200)
-    assert.match(response.text, /Session data has been cleared/)
+    assert.match(response.text, /Session data cleared/)
   })
 
   it('Shows feature flags page', async () => {
