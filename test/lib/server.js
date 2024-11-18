@@ -16,12 +16,6 @@ describe('Server', () => {
     assert.equal(response.status, 200)
   })
 
-  it('Serves GOV.UK assets from modules folder', async () => {
-    const response = await request.get('/govuk/assets/images/favicon.ico')
-
-    assert.equal(response.status, 200)
-  })
-
   it('Serves robots.txt', async () => {
     const response = await request.get('/robots.txt')
 

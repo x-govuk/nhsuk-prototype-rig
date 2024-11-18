@@ -1,19 +1,4 @@
-// GOV.UK Frontend options
-$govuk-font-family: "Frutiger W01", arial, sans-serif;
-$govuk-brand-colour: #005eb8;
-$govuk-error-colour: #d5281b;
-$govuk-success-colour: #007f3b;
-$govuk-global-styles: false;
-$govuk-assets-path: "/govuk/assets/";
-
-@import "node_modules/nhsuk-frontend/packages/nhsuk";
-
-// Import GOV.UK Frontend
-@import "govuk-frontend/dist/govuk/all";
-
-// Import GOV.UK Prototype Components
-@import "@x-govuk/govuk-prototype-components/x-govuk/all";
-
+@import "nhsuk-frontend/packages/nhsuk";
 @import "email";
 @import "unbranded";
 
