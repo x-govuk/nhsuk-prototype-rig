@@ -20,7 +20,6 @@ The Prototype Rig works in exactly the same way as the NHS Prototype Kit. It sto
 - Support for [form validation](form-validation.md)
 - Form [component helper](form-components.md)
 - Nunjucks [template filters](filters.md)
-- Common [components](components.md) not currently in the GOV.UK or NHS.UK design systems
 - Full documentation, with code documented using [JSDoc](https://jsdoc.app).
 
 ## Privacy
