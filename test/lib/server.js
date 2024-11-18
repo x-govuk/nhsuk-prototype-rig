@@ -1,6 +1,8 @@
 import { strict as assert } from 'node:assert'
 import { after, describe, it } from 'node:test'
+
 import supertest from 'supertest'
+
 import server from '../../lib/server.js'
 
 describe('Server', () => {

@@ -2,7 +2,8 @@ import { wizard } from 'nhsuk-prototype-rig'
 
 /**
  * Get wizard journey
- * @param {object} req Express request
+ *
+ * @param {object} req - Express request
  * @returns {Function} Wizard journey
  */
 export function exampleWizard(req) {

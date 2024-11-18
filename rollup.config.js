@@ -1,7 +1,7 @@
 import commonJs from '@rollup/plugin-commonjs'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
-import scss from 'rollup-plugin-scss'
 import copy from 'rollup-plugin-copy'
+import scss from 'rollup-plugin-scss'
 
 export default [
   {

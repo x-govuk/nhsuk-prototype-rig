@@ -1,7 +1,9 @@
 import { strict as assert } from 'node:assert'
 import { describe, it } from 'node:test'
-import sinon from 'sinon'
+
 import mockReqRes from 'mock-req-res'
+import sinon from 'sinon'
+
 import {
   notFoundError,
   internalServerError

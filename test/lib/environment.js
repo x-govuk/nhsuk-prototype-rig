@@ -1,6 +1,7 @@
 import { strict as assert } from 'node:assert'
 import process from 'node:process'
 import { describe, it } from 'node:test'
+
 import { getEnvBoolean } from '../../lib/environment.js'
 
 describe('Environment', () => {

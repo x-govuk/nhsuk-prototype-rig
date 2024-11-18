@@ -1,6 +1,8 @@
 import { strict as assert } from 'node:assert'
 import { describe, it } from 'node:test'
+
 import nunjucks from 'nunjucks'
+
 import { checked } from '../../../lib/globals/checked.js'
 
 describe('Checked global', () => {

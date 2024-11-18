@@ -4,6 +4,7 @@
  * You can override Prototype Rig globals by creating global methods
  * with the same name. You can delete this file if you don’t need your
  * own globals.
+ *
  * @returns {object} Globals
  */
 export default () => {
@@ -11,6 +12,7 @@ export default () => {
 
   /**
    * Add your methods to the globals object below this comment block
+   *
    * @example
    * globals.sayHello = function (name) {
    *   return `Hello, ${name}!`
