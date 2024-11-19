@@ -22,7 +22,7 @@ async function compileAssets() {
     bundle: true,
     legalComments: 'none',
     minify: true,
-    outdir: 'public',
+    outdir: 'assets',
     plugins: [
       sassPlugin({
         loadPaths: ['.', 'node_modules'],
