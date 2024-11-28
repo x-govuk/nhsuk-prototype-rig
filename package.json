@@ -58,6 +58,7 @@
     "nhsuk-decorated-components": "^0.1.0",
     "nhsuk-frontend": "^9.0.0",
     "nhsuk-prototype-rig": "file:./",
+    "nodemon": "^3.1.7",
     "nunjucks": "^3.2.1",
     "portscanner": "^2.2.0",
     "validate.js": "^0.13.1"
