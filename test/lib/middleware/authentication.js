@@ -1,9 +1,8 @@
 import { strict as assert } from 'node:assert'
 import process from 'node:process'
-import { describe, it } from 'node:test'
+import { describe, it, mock } from 'node:test'
 
 import mockReqRes from 'mock-req-res'
-import sinon from 'sinon'
 
 import { authentication } from '../../../lib/middleware/authentication.js'
 
@@ -13,17 +12,17 @@ describe('Authentication middleware', () => {
   it('Doesn’t authenticate password page', () => {
     const request = mockRequest({ path: '/prototype-password' })
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     authentication(request, response, next)
 
-    assert.equal(next.calledOnce, true)
+    assert.equal(next.mock.callCount(), 1)
   })
 
   it('Shows custom error page if password hasn’t been set', () => {
     const request = mockRequest({ path: '/' })
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     authentication(request, response, next)
 
@@ -36,7 +35,7 @@ describe('Authentication middleware', () => {
 
     const request = mockRequest({ path: '/' })
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     authentication(request, response, next)
 
@@ -60,10 +59,10 @@ describe('Authentication middleware', () => {
       path: '/'
     })
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     authentication(request, response, next)
 
-    assert.equal(next.calledOnce, true)
+    assert.equal(next.mock.callCount(), 1)
   })
 })

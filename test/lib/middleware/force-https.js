@@ -1,15 +1,14 @@
 import { strict as assert } from 'node:assert'
-import { describe, it } from 'node:test'
+import { describe, it, mock } from 'node:test'
 
 import mockReqRes from 'mock-req-res'
-import sinon from 'sinon'
 
 import { forceHttps } from '../../../lib/middleware/force-https.js'
 
 const { mockRequest, mockResponse } = mockReqRes
 
 describe('Force HTTPS middleware', () => {
-  sinon.stub(console, 'info')
+  mock.method(console, 'info')
 
   it('Forces HTTPS', () => {
     const request = mockRequest({
@@ -17,7 +16,7 @@ describe('Force HTTPS middleware', () => {
       connection: {}
     })
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     forceHttps(request, response, next)
 
@@ -30,7 +29,7 @@ describe('Force HTTPS middleware', () => {
       connection: {}
     })
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     forceHttps(request, response, next)
 
@@ -42,10 +41,10 @@ describe('Force HTTPS middleware', () => {
       connection: {}
     })
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     forceHttps(request, response, next)
 
-    assert.equal(next.calledOnce, true)
+    assert.equal(next.mock.callCount(), 1)
   })
 })

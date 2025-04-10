@@ -1,8 +1,7 @@
 import { strict as assert } from 'node:assert'
-import { describe, it } from 'node:test'
+import { describe, it, mock } from 'node:test'
 
 import mockReqRes from 'mock-req-res'
-import sinon from 'sinon'
 
 import {
   notFoundError,
@@ -12,12 +11,12 @@ import {
 const { mockRequest, mockResponse } = mockReqRes
 
 describe('Error middleware', () => {
-  sinon.stub(console, 'error')
+  mock.method(console, 'error')
 
   it('Returns 404 for page not found', () => {
     const request = mockRequest()
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     notFoundError(request, response, next)
 
@@ -29,7 +28,7 @@ describe('Error middleware', () => {
     const unknownError = new Error('Unknown')
     const request = mockRequest()
     const response = mockResponse()
-    const next = sinon.spy()
+    const next = mock.fn(() => {})
 
     internalServerError(unknownError, request, response, next)
 
