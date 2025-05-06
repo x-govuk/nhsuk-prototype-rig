@@ -1,3 +1,5 @@
+{%- set assetPath = "/nhsuk-frontend/assets" -%}
+
 {% extends "template.njk" %}
 
 {%- from "components/action-link/macro.njk" import actionLink %}
@@ -36,6 +38,7 @@
 
 {% block head %}
   <link rel="stylesheet" href="/assets/application.css" media="all">
+  <script src="/nhsuk-frontend/nhsuk.min.js" defer=""></script>
   <script src="/assets/application.js" defer></script>
 {% endblock %}
 
