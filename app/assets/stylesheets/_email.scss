@@ -1,8 +1,10 @@
-$email-page-width: 640px;
+@use "nhsuk-frontend/dist/nhsuk" as *;
+
+$_email-page-width: 640px;
 
 .nhsuk-width-container--email {
   margin: 0 auto;
-  max-width: $email-page-width;
+  max-width: $_email-page-width;
 }
 
 .app-email {
@@ -11,17 +13,18 @@ $email-page-width: 640px;
 
 .app-email__header {
   .nhsuk-header__container {
+    margin: 0;
+
     @include nhsuk-responsive-padding(5, "left");
     @include nhsuk-responsive-padding(5, "right");
-    margin: 0;
   }
 }
 
 .app-email__metadata {
-  @include nhsuk-typography-responsive(16);
+  @include nhsuk-font-size(16);
   @include nhsuk-responsive-margin(5);
 
-  @include mq($from: desktop) {
+  @include nhsuk-media-query($from: desktop) {
     margin-left: 0;
     margin-right: 0;
   }
@@ -48,7 +51,7 @@ $email-page-width: 640px;
   border-radius: 10px 10px 0 0;
   border-top: nhsuk-spacing(4) solid $color_nhsuk-grey-2;
   padding: 0;
-  max-width: $email-page-width;
+  max-width: $_email-page-width;
 
   * {
     font-family: system-ui, sans-serif;

@@ -1,5 +1,5 @@
-@import "nhsuk-frontend/dist/nhsuk";
-@import "email";
-@import "unbranded";
+@forward "nhsuk-frontend/dist/nhsuk";
+@forward "email";
+@forward "unbranded";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
