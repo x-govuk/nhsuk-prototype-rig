@@ -6,11 +6,7 @@ import nunjucks from 'nunjucks'
 import { checked } from '../../../lib/globals/checked.js'
 
 describe('Checked global', () => {
-  const views = [
-    './',
-    './node_modules/nhsuk-frontend/packages/components',
-    './test/fixtures'
-  ]
+  const views = ['./', './node_modules/nhsuk-frontend/dist', './test/fixtures']
   const env = nunjucks.configure(views)
   env.addGlobal('checked', checked)
 

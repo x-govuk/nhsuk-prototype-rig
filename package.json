@@ -55,7 +55,7 @@
     "express-rate-limit": "^7.1.0",
     "express-session": "^1.13.0",
     "lodash": "^4.17.21",
-    "nhsuk-decorated-components": "^0.2.0",
+    "nhsuk-decorated-components": "github:x-govuk/nhsuk-decorated-components",
     "nhsuk-frontend": "^10.0.0-internal.0",
     "nodemon": "^3.1.7",
     "nunjucks": "^3.2.1",
