@@ -29,6 +29,7 @@ describe('Error middleware', () => {
     const request = mockRequest()
     const response = mockResponse()
     const next = mock.fn(() => {})
+    mock.method(console, "error", () => {}); // Disable console.info
 
     internalServerError(unknownError, request, response, next)
 
