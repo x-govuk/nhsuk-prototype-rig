@@ -13,8 +13,8 @@
       <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">{{ error.name }}</h2>
       <p class="nhsuk-caption-m">{{ error.message | nl2br | nl2br | safe }}</p>
       {{ details({
-        text: "Stack trace",
-        HTML: stackHtml
+        summaryText: "Stack trace",
+        html: stackHtml
       }) }}
 
       <pre class="nhsuk-u-margin-top-8">Status code: {{ error.status }}</pre>

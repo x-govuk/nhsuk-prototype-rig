@@ -60,15 +60,17 @@
 
 {% block footer %}
   {{ footer({
-    links: [
-      {
-        label: "Clear session data",
-        URL: "/clear-session-data"
-      } if useAutoStoreData, {
-        label: "Feature flags",
-        URL: "/feature-flags"
-      }
-    ]
+    meta: {
+      items: [
+        {
+          text: "Clear session data",
+          href: "/clear-session-data"
+        } if useAutoStoreData, {
+          text: "Feature flags",
+          href: "/feature-flags"
+        }
+      ]
+    }
   }) }}
 {% endblock %}
 
