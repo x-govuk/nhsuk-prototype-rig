@@ -46,10 +46,10 @@ $_email-page-width: 640px;
 }
 
 .app-email__message {
-  background-color: $color_nhsuk-white;
-  border: 1px solid $color_nhsuk-grey-2;
+  background-color: nhsuk-colour("white");
+  border: 1px solid $nhsuk-border-colour;
   border-radius: 10px 10px 0 0;
-  border-top: nhsuk-spacing(4) solid $color_nhsuk-grey-2;
+  border-top: nhsuk-spacing(4) solid $nhsuk-border-colour;
   padding: 0;
   max-width: $_email-page-width;
 
