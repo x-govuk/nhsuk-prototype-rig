@@ -1,4 +1,4 @@
-{%- set assetPath = "/nhsuk-frontend/assets" -%}
+{%- set assetPath = assetPath | default("/nhsuk/assets", true) -%}
 
 {% extends "nhsuk/template.njk" %}
 
