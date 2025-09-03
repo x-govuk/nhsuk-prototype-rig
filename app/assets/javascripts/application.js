@@ -1,1 +1,3 @@
-// Add your scripts here
+import { initAll } from 'nhsuk-frontend'
+
+initAll()
