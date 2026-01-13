@@ -35,7 +35,7 @@
     "start": "nhsuk-prototype-rig",
     "test": "NODE_ENV=test node --test",
     "coverage": "NODE_ENV=test node --test --experimental-test-coverage",
-    "release": "np"
+    "release": "np --no-publish"
   },
   "publishConfig": {
     "access": "public"
