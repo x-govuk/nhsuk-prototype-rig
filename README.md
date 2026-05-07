@@ -1,6 +1,14 @@
-# NHS.UK Prototype Rig
+# NHS prototype rig
 
-A WIP NHS.UK of the [GOV.UK Prototype Rig](https://x-govuk.github.io/govuk-prototype-rig/).
+Rapidly create HTML prototypes of NHS services.
+
+> [!NOTE]
+>
+> This project has been retired.
+>
+> The NHS prototype rig was a re-imagined version of the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk). It added new features like asset compilation, feature flags and password protection.
+>
+> This made sense while the NHS prototype kit wasn’t actively developed, but that situation later changed, and many of the features of this project were added to the [official prototype kit package](https://github.com/nhsuk/nhsuk-prototype-kit-package).
 
 ## Requirements
 

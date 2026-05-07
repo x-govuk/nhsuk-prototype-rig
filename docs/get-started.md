@@ -1,6 +1,6 @@
 # Get started
 
-Like the NHS.UK Prototype Kit, the rig is built on the [Express](http://expressjs.com/) framework, and uses [NHS.UK Frontend](https://github.com/nhsuk/nhsuk-frontend).
+Like the NHS prototype kit, the rig is built on the [Express](http://expressjs.com/) framework, and uses [NHS.UK Frontend](https://github.com/nhsuk/nhsuk-frontend).
 
 ## Requirements
 
