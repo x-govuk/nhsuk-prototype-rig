@@ -17,5 +17,7 @@ nodemon.on('exit', () => {
     ignoreExit = false
     return
   }
+
+  // eslint-disable-next-line
   process.exit()
 })

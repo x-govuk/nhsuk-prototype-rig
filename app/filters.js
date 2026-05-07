@@ -5,10 +5,9 @@
  * with the same name. You can delete this file if you don’t need your
  * own filters.
  *
- * @param {object} env - Nunjucks environment
  * @returns {object} Filters
  */
-export default (env) => {
+export default () => {
   const filters = {}
 
   /**

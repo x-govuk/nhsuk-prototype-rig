@@ -90,17 +90,6 @@ describe('Server', () => {
     assert.equal(response.status, 302)
   })
 
-  // it('Throws error if trying to redirect to an external site', async () => {
-  //   process.env.NODE_ENV = 'production'
-  //   process.env.PASSWORD = 'test'
-  //   const response = await request.post('/prototype-password')
-  //     .send({ _password: 'test' })
-  //     .send({ returnUrl: 'https://gov.uk' })
-
-  //   assert.equal(response.status, 500)
-  //   assert.match(response.text, /Return URL must be a page in this prototype/)
-  // })
-
   it('Shows 404 not found page', async () => {
     const response = await request.get('/not-found')
 
@@ -109,6 +98,7 @@ describe('Server', () => {
 
   after(function (done) {
     app.close(done)
+    // eslint-disable-next-line
     process.exit(0)
   })
 })

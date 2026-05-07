@@ -48,7 +48,7 @@ describe('Authentication middleware', () => {
     )
   })
 
-  it('Allows authenticated user to continue', (t) => {
+  it('Allows authenticated user to continue', () => {
     process.env.PASSWORD = 'test'
 
     const request = mockRequest({
