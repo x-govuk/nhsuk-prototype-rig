@@ -50,7 +50,7 @@
     "cookie-parser": "^1.4.6",
     "cosmiconfig": "^9.0.0",
     "dotenv": "^17.0.0",
-    "esbuild": "^0.27.0",
+    "esbuild": "^0.28.0",
     "esbuild-sass-plugin": "^3.3.1",
     "express": "^5.1.0",
     "express-rate-limit": "^8.0.0",
@@ -64,14 +64,17 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "@x-govuk/eslint-config": "^0.0.1",
+    "@x-govuk/eslint-config": "^0.0.2",
     "mock-req-res": "^1.2.0",
     "nhsuk-prototype-rig": "file:./",
-    "np": "^10.0.0",
+    "np": "^11.0.0",
     "prettier": "^3.1.0",
     "stylelint": "^16.0.0",
     "stylelint-config-gds": "^2.0.0",
     "supertest": "^7.0.0"
+  },
+  "peerDependencies": {
+    "pg": "^8.20.0"
   },
   "engines": {
     "node": ">=22"
